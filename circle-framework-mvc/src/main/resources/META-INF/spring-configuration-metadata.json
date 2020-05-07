@@ -1,0 +1,62 @@
+{
+  "groups": [
+    {
+      "name": "circle.swagger",
+      "type": "cn.xzxy.lewy.framework.webmvc.config.SwaggerProperties",
+      "sourceType": "cn.xzxy.lewy.framework.webmvc.config.SwaggerProperties",
+      "description": "Circle 的 Swagger 相关配置"
+    }
+  ],
+  "properties": [
+    {
+      "name": "circle.swagger.enabled",
+      "type": "java.lang.Boolean",
+      "description": "swagger 启用开关 ",
+      "sourceType": "cn.xzxy.lewy.mvc.config.SwaggerProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "circle.swagger.contact.name",
+      "type": "java.lang.String",
+      "description": "API author name",
+      "sourceType": "cn.xzxy.lewy.mvc.config.SwaggerProperties$Contact"
+    },
+    {
+      "name": "circle.swagger.contact.url",
+      "type": "java.lang.String",
+      "description": "API author personal page",
+      "sourceType": "cn.xzxy.lewy.mvc.config.SwaggerProperties$Contact"
+    },
+    {
+      "name": "circle.swagger.contact.email",
+      "type": "java.lang.String",
+      "description": "API author email",
+      "sourceType": "cn.xzxy.lewy.mvc.config.SwaggerProperties$Contact"
+    },
+    {
+      "name": "circle.swagger.description",
+      "type": "java.lang.String",
+      "description": "API description",
+      "sourceType": "cn.xzxy.lewy.mvc.config.SwaggerProperties"
+    },
+    {
+      "name": "circle.swagger.title",
+      "type": "java.lang.String",
+      "description": "API title",
+      "sourceType": "cn.xzxy.lewy.mvc.config.SwaggerProperties"
+    },
+    {
+      "name": "circle.swagger.version",
+      "type": "java.lang.String",
+      "description": "API version",
+      "sourceType": "cn.xzxy.lewy.mvc.config.SwaggerProperties"
+    },
+    {
+      "name": "circle.swagger.base-package",
+      "type": "java.lang.String",
+      "description": "swagger 自动扫描该 package 下的所有 swagger 相关 annotation",
+      "sourceType": "cn.xzxy.lewy.mvc.config.SwaggerProperties",
+      "defaultValue": "cn.xzxy.lewy"
+    }
+  ]
+}
