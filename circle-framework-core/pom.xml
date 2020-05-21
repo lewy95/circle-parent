@@ -29,7 +29,6 @@
         <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
         <spring-webmvc.version>5.2.3.RELEASE</spring-webmvc.version>
         <mseaf-core.version>1.0.0-SNAPSHOT</mseaf-core.version>
-        <mybatis.version>3.5.4</mybatis.version>
         <BeanUtils.version>1.0.11</BeanUtils.version>
         <swagger-anno.version>1.6.0</swagger-anno.version>
         <javassist.version>3.26.0-GA</javassist.version>
@@ -37,6 +36,12 @@
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
         <!--validation-api-->
         <dependency>
             <groupId>javax.validation</groupId>
@@ -124,13 +129,6 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring-webmvc.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>${mybatis.version}</version>
             <scope>provided</scope>
         </dependency>
 
