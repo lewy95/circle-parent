@@ -45,9 +45,9 @@ public class SwaggerConfig {
                 .description(swaggerProperties.getDescription())
                 .version(swaggerProperties.getVersion())
                 .contact(new Contact(
-                        swaggerProperties.getContact() != null ? swaggerProperties.getContact().getName() : "someone",
+                        swaggerProperties.getContact() != null ? swaggerProperties.getContact().getName() : "lewy",
                         swaggerProperties.getContact() != null ? swaggerProperties.getContact().getUrl() : "/",
-                        swaggerProperties.getContact() != null ? swaggerProperties.getContact().getEmail() : "someone@email.com"))
+                        swaggerProperties.getContact() != null ? swaggerProperties.getContact().getEmail() : "lewy95@aliyun.com"))
                 .build();
     }
 }
