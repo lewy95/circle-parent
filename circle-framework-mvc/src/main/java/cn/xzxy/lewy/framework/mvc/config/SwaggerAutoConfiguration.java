@@ -19,7 +19,6 @@ import springfox.documentation.spring.web.plugins.Docket;
 @Import({
         SwaggerConfiguration.class
 })
-
 public class SwaggerAutoConfiguration {
 
     @Bean
