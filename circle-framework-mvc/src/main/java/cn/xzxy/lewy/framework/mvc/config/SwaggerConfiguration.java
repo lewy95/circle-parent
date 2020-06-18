@@ -9,7 +9,7 @@ import springfox.documentation.swagger2.configuration.Swagger2DocumentationConfi
  * @author lewy95
  **/
 @Configuration
-@ConditionalOnProperty(name = "circle.swagger.enabled", matchIfMissing = true)
+@ConditionalOnProperty(name = "circle.swagger.enabled")
 @Import({
         Swagger2DocumentationConfiguration.class})
 public class SwaggerConfiguration {

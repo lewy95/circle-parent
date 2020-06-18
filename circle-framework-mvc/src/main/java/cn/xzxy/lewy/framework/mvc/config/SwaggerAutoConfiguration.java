@@ -30,7 +30,7 @@ public class SwaggerAutoConfiguration {
 
     @Bean
     @ConditionalOnMissingBean
-    @ConditionalOnProperty(name = "circle.swagger.enabled", matchIfMissing = true)
+    @ConditionalOnProperty(name = "circle.swagger.enabled")
     public Docket createRestApi(SwaggerProperties swaggerProperties) {
 
         return new Docket(DocumentationType.SWAGGER_2)
