@@ -1,6 +1,6 @@
 # Auto Configuration
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-cn.xzxy.lewy.mvc.handler.ExceptionConverterHandler,\
-cn.xzxy.lewy.mvc.config.CircleSwaggerAutoConfiguration
+cn.xzxy.lewy.framework.mvc.handler.ExceptionConverterHandler,\
+cn.xzxy.lewy.framework.mvc.config.SwaggerAutoConfiguration
 
 

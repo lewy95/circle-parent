@@ -2,8 +2,8 @@
   "groups": [
     {
       "name": "circle.log",
-      "type": "cn.xzxy.lewy.logback.config.CircleLogbackConfigProperties",
-      "sourceType": "cn.xzxy.lewy.logback.config.CircleLogbackConfigProperties",
+      "type": "cn.xzxy.lewy.framework.logback.config.CircleLogbackConfigProperties",
+      "sourceType": "cn.xzxy.lewy.framework.logback.config.CircleLogbackConfigProperties",
       "description": "Circle Logbcak 相关配置"
     }
   ],
@@ -11,25 +11,25 @@
     {
       "name": "circle.log.application-name",
       "type": "java.lang.String",
-      "sourceType": "cn.xzxy.lewy.logback.config.CircleLogbackConfigProperties",
+      "sourceType": "cn.xzxy.lewy.framework.logback.config.CircleLogbackConfigProperties",
       "description": "应用id"
     },
     {
       "name": "circle.log.module-name",
       "type": "java.lang.String",
-      "sourceType": "cn.xzxy.lewy.logback.config.CircleLogbackConfigProperties",
+      "sourceType": "cn.xzxy.lewy.framework.logback.config.CircleLogbackConfigProperties",
       "description": "模块名"
     },
     {
       "name": "circle.log.level",
       "type": "java.lang.String",
-      "sourceType": "cn.xzxy.lewy.logback.config.CircleLogbackConfigProperties",
+      "sourceType": "cn.xzxy.lewy.framework.logback.config.CircleLogbackConfigProperties",
       "description": "日志等级"
     },
     {
       "name": "circle.log.file.path",
       "type": "java.lang.String",
-      "sourceType": "cn.xzxy.lewy.logback.config.CircleLogbackConfigProperties",
+      "sourceType": "cn.xzxy.lewy.framework.logback.config.CircleLogbackConfigProperties",
       "description": "日志路径"
     }
   ]
