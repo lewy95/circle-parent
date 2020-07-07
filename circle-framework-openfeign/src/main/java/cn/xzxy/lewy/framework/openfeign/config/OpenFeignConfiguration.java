@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Import;
  **/
 @Slf4j
 @ConditionalOnProperty(value = "circle.openfeign.mapping.enabled", havingValue = "true")
-@Import({GlobalMappingConfig.class, HeaderPenetrateConfigure.class})
+@Import({GlobalMappingConfiguration.class, HeaderPenetrateConfigure.class})
 @Configuration
 @EnableConfigurationProperties({MappingProperties.class, OpenFeignSignProperties.class})
 @EnableFeignClients(basePackages = "cn.xzxy.lewy")

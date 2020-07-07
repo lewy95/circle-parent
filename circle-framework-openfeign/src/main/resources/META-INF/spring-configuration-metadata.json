@@ -11,6 +11,11 @@
       "sourceType": "cn.xzxy.lewy.framework.openfeign.model.MappingProperties"
     },
     {
+      "name": "circle.openfeign.global-mapping",
+      "type": "cn.xzxy.lewy.framework.openfeign.model.GlobalMappingProperties",
+      "sourceType": "cn.xzxy.lewy.framework.openfeign.model.GlobalMappingProperties"
+    },
+    {
       "name": "circle.openfeign.sign",
       "type": "cn.xzxy.lewy.framework.openfeign.model.OpenFeignSignProperties",
       "sourceType": "cn.xzxy.lewy.framework.openfeign.model.OpenFeignSignProperties"
@@ -29,6 +34,13 @@
       "description": "RestTemplate 和 Fegin 透传到下层的 Headers 名称表达式",
       "sourceType": "cn.xzxy.lewy.framework.openfeign.model.PenetrableHeaderProperties",
       "defaultValue": "X-*"
+    },
+    {
+      "name": "circle.openfeign.global-mapping.enabled",
+      "type": "java.lang.Boolean",
+      "description": "开启全局映射",
+      "sourceType": "cn.xzxy.lewy.framework.openfeign.model.GlobalMappingProperties",
+      "defaultValue": false
     },
     {
       "name": "circle.openfeign.mapping.enabled",

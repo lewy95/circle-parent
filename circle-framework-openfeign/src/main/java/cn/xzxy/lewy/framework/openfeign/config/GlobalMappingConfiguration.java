@@ -1,7 +1,9 @@
 package cn.xzxy.lewy.framework.openfeign.config;
 
 import cn.xzxy.lewy.framework.openfeign.handler.MappingHandler;
+import cn.xzxy.lewy.framework.openfeign.model.GlobalMappingProperties;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
@@ -13,6 +15,6 @@ import org.springframework.context.annotation.Import;
  **/
 @Import(MappingHandler.class)
 @Configuration
-@ConditionalOnProperty(name = "circle.openfeign.global-mapping.enabled", havingValue = "true")
-public class GlobalMappingConfig {
+@EnableConfigurationProperties(GlobalMappingProperties.class)
+public class GlobalMappingConfiguration {
 }
