@@ -7,6 +7,8 @@ import java.lang.annotation.*;
 
 /**
  * 重写Swagger2启动注解，其他项目要使用Swagger2时只要使用该注解就可以了
+ *
+ * @author lewy95
  */
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)

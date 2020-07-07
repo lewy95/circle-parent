@@ -1,0 +1,62 @@
+{
+  "groups": [
+    {
+      "name": "circle.openfeign.headers",
+      "type": "cn.xzxy.lewy.framework.openfeign.model.PenetrableHeaderProperties",
+      "sourceType": "cn.xzxy.lewy.framework.openfeign.model.PenetrableHeaderProperties"
+    },
+    {
+      "name": "circle.openfeign.mapping",
+      "type": "cn.xzxy.lewy.framework.openfeign.model.MappingProperties",
+      "sourceType": "cn.xzxy.lewy.framework.openfeign.model.MappingProperties"
+    },
+    {
+      "name": "circle.openfeign.sign",
+      "type": "cn.xzxy.lewy.framework.openfeign.model.OpenFeignSignProperties",
+      "sourceType": "cn.xzxy.lewy.framework.openfeign.model.OpenFeignSignProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "circle.openfeign.headers.allowed",
+      "type": "java.util.List<java.lang.String>",
+      "description": "RestTemplate 和 Fegin 透传到下层的 Headers 名称列表",
+      "sourceType": "cn.xzxy.lewy.framework.openfeign.model.PenetrableHeaderProperties"
+    },
+    {
+      "name": "circle.openfeign.headers.pattern",
+      "type": "java.lang.String",
+      "description": "RestTemplate 和 Fegin 透传到下层的 Headers 名称表达式",
+      "sourceType": "cn.xzxy.lewy.framework.openfeign.model.PenetrableHeaderProperties",
+      "defaultValue": "X-*"
+    },
+    {
+      "name": "circle.openfeign.mapping.enabled",
+      "type": "java.lang.Boolean",
+      "description": "开启映射",
+      "sourceType": "cn.xzxy.lewy.framework.openfeign.model.MappingProperties"
+    },
+    {
+      "name": "circle.openfeign.mapping.map",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "description": "映射信息",
+      "sourceType": "cn.xzxy.lewy.framework.openfeign.model.MappingProperties"
+    },
+    {
+      "name": "circle.openfeign.sign.app-id",
+      "type": "java.lang.String",
+      "sourceType": "cn.xzxy.lewy.framework.openfeign.model.OpenFeignSignProperties"
+    },
+    {
+      "name": "circle.openfeign.sign.app-key",
+      "type": "java.lang.String",
+      "sourceType": "cn.xzxy.lewy.framework.openfeign.model.OpenFeignSignProperties"
+    },
+    {
+      "name": "circle.openfeign.sign.mid-path",
+      "type": "java.lang.String",
+      "sourceType": "cn.xzxy.lewy.framework.openfeign.model.OpenFeignSignProperties"
+    }
+  ],
+  "hints": []
+}

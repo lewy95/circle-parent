@@ -1,0 +1,4 @@
+# Auto Configuration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.xzxy.lewy.framework.openfeign.config.OpenFeignConfiguration
+

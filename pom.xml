@@ -13,6 +13,7 @@
         <module>circle-framework-mvc</module>
         <module>circle-framework-core</module>
         <module>circle-framework-logback</module>
+        <module>circle-framework-openfeign</module>
     </modules>
 
     <properties>
