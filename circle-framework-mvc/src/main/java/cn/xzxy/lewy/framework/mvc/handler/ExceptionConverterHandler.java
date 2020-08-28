@@ -58,15 +58,15 @@ public class ExceptionConverterHandler extends ResponseEntityExceptionHandler {
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @ExceptionHandler(Exception.class)
+    @ExceptionHandler({Exception.class})
     public ResponseEntity<Object> handleSysException(Exception ex, WebRequest request) {
         HttpHeaders headers = new HttpHeaders();
         log.error("SystemException Info:{}", ex.getMessage());
-        return buildResponseEntity(headers, JsonResponseEntity.buildSysTemError("系统异常"));
+        return buildResponseEntity(headers, JsonResponseEntity.buildSysTemError("服务器走丢了~"));
     }
 
     @ResponseStatus(value = HttpStatus.OK)
-    @ExceptionHandler(BusinessException.class)
+    @ExceptionHandler({BusinessException.class})
     public ResponseEntity<Object> handleBusinessException(BusinessException ex,
                                                           WebRequest request) {
         log.error("BusinessException Info:{}", ex.getMessage());
@@ -75,7 +75,7 @@ public class ExceptionConverterHandler extends ResponseEntityExceptionHandler {
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @ExceptionHandler(BusinessSpecificationException.class)
+    @ExceptionHandler({BusinessSpecificationException.class})
     public ResponseEntity<Object> handleBusinessSpecificationException(BusinessSpecificationException ex, WebRequest request) {
         log.error("BusinessException Info:{}", ex.getMessage());
         HttpHeaders headers = new HttpHeaders();
@@ -83,7 +83,7 @@ public class ExceptionConverterHandler extends ResponseEntityExceptionHandler {
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @ExceptionHandler(IOException.class)
+    @ExceptionHandler({IOException.class})
     public ResponseEntity<Object> handleIOException(IOException ex, WebRequest request) {
         HttpHeaders headers = new HttpHeaders();
         log.error("IOException Info", ex);
@@ -91,7 +91,7 @@ public class ExceptionConverterHandler extends ResponseEntityExceptionHandler {
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @ExceptionHandler(SQLException.class)
+    @ExceptionHandler({SQLException.class})
     public ResponseEntity<Object> handleSQLException(SQLException ex, WebRequest request) {
         log.error("SQLException Info:{}", ex.getMessage());
         HttpHeaders headers = new HttpHeaders();
@@ -99,27 +99,27 @@ public class ExceptionConverterHandler extends ResponseEntityExceptionHandler {
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @ExceptionHandler(RuntimeException.class)
+    @ExceptionHandler({RuntimeException.class})
     public ResponseEntity<Object> handleRuntimeException(RuntimeException runtimeException, WebRequest request) {
         log.error("RuntimeException Info:{}", runtimeException.getMessage());
         HttpHeaders headers = new HttpHeaders();
-        return buildResponseEntity(headers, JsonResponseEntity.buildBusinessError("服务器错误", HttpStatus.BAD_REQUEST.value()));
+        return buildResponseEntity(headers, JsonResponseEntity.buildBusinessError("服务器走丢了~", HttpStatus.BAD_REQUEST.value()));
     }
 
-    @ExceptionHandler(AbstractBusinessException.class)
+    @ExceptionHandler({AbstractBusinessException.class})
     public JsonResponseEntity handleAssignableFromAbstractException(AbstractBusinessException ex) {
         log.error("Error Info:{}", ex.getMessage());
         return JsonResponseEntity.buildBusinessError(ex.getMessage(), ex.getCode());
     }
 
-    @ExceptionHandler(AbstractBusinessSpecificationException.class)
+    @ExceptionHandler({AbstractBusinessSpecificationException.class})
     public JsonResponseEntity handleAbstractBusinessSpecificationException(AbstractBusinessSpecificationException ex) {
         log.error("Error Info", ex);
         return JsonResponseEntity.buildBusinessError(ex.getMessage(), ex.getCode());
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @ExceptionHandler(MethodArgumentTypeMismatchException.class)
+    @ExceptionHandler({MethodArgumentTypeMismatchException.class})
     public ResponseEntity<Object> handleMethodArgumentTypeMismatchException(BusinessException ex, WebRequest request) {
         log.error("MethodArgumentTypeMismatchException Info", ex);
         HttpHeaders headers = new HttpHeaders();
@@ -127,7 +127,7 @@ public class ExceptionConverterHandler extends ResponseEntityExceptionHandler {
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @ExceptionHandler(JsonParseException.class)
+    @ExceptionHandler({JsonParseException.class})
     public ResponseEntity<Object> handleJsonParseException(JsonParseException jsonParseException, WebRequest request) {
         log.error("JsonParseException Info", jsonParseException);
         HttpHeaders headers = new HttpHeaders();
