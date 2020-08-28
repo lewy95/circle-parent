@@ -1,6 +1,6 @@
 package cn.xzxy.lewy.framework.core.model;
 
-import cn.xzxy.lewy.framework.core.utils.FastJsonUtil;
+import cn.xzxy.lewy.framework.core.json.FastJsonUtil;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

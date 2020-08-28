@@ -4,7 +4,7 @@ package cn.xzxy.lewy.framework.mvc.exception;
  * @author lewy95
  */
 public class BusinessException extends RuntimeException {
-    private static final long serialVersionUID = 1631417040312856798L;
+    private static final long serialVersionUID = 1L;
 
     private String message = "业务异常";
     private int status = 400;

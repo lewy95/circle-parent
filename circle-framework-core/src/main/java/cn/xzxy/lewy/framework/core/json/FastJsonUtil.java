@@ -1,4 +1,4 @@
-package cn.xzxy.lewy.framework.core.utils;
+package cn.xzxy.lewy.framework.core.json;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;

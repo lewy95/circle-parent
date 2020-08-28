@@ -1,4 +1,4 @@
-package cn.xzxy.lewy.framework.core.utils;
+package cn.xzxy.lewy.framework.core.httpclient;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.*;
