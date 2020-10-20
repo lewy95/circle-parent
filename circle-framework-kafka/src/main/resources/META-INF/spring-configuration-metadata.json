@@ -1,0 +1,89 @@
+{
+  "groups": [
+    {
+      "name": "circle.config.kafka.log.executor",
+      "type": "cn.xzxy.lewy.framework.kafka.config.LogServiceThreadPoolExecutorProperties",
+      "sourceType": "cn.xzxy.lewy.framework.kafka.config.LogServiceThreadPoolExecutorProperties"
+    },
+    {
+      "name": "circle.config.kafka.mongo",
+      "type": "cn.xzxy.lewy.framework.kafka.config.MongoClientOptionsProperties",
+      "sourceType": "cn.xzxy.lewy.framework.kafka.config.MongoClientOptionsProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "circle.config.kafka.log.executor.await-termination-seconds",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.xzxy.lewy.framework.kafka.config.LogServiceThreadPoolExecutorProperties",
+      "defaultValue": 60
+    },
+    {
+      "name": "circle.config.kafka.log.executor.core-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.xzxy.lewy.framework.kafka.config.LogServiceThreadPoolExecutorProperties",
+      "defaultValue": 50
+    },
+    {
+      "name": "circle.config.kafka.log.executor.keep-alive-seconds",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.xzxy.lewy.framework.kafka.config.LogServiceThreadPoolExecutorProperties",
+      "defaultValue": 60
+    },
+    {
+      "name": "circle.config.kafka.log.executor.max-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.xzxy.lewy.framework.kafka.config.LogServiceThreadPoolExecutorProperties",
+      "defaultValue": 500
+    },
+    {
+      "name": "circle.config.kafka.log.executor.queue-capacity",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.xzxy.lewy.framework.kafka.config.LogServiceThreadPoolExecutorProperties",
+      "defaultValue": 1000
+    },
+    {
+      "name": "circle.config.kafka.mongo.connect-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.xzxy.lewy.framework.kafka.config.MongoClientOptionsProperties",
+      "defaultValue": 10000
+    },
+    {
+      "name": "circle.config.kafka.mongo.max-connection-idle-time",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.xzxy.lewy.framework.kafka.config.MongoClientOptionsProperties",
+      "defaultValue": 60000
+    },
+    {
+      "name": "circle.config.kafka.mongo.max-connection-life-time",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.xzxy.lewy.framework.kafka.config.MongoClientOptionsProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "circle.config.kafka.mongo.max-connections-per-host",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.xzxy.lewy.framework.kafka.config.MongoClientOptionsProperties",
+      "defaultValue": 20
+    },
+    {
+      "name": "circle.config.kafka.mongo.max-wait-time",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.xzxy.lewy.framework.kafka.config.MongoClientOptionsProperties",
+      "defaultValue": 120000
+    },
+    {
+      "name": "circle.config.kafka.mongo.min-connections-per-host",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.xzxy.lewy.framework.kafka.config.MongoClientOptionsProperties",
+      "defaultValue": 10
+    },
+    {
+      "name": "circle.config.kafka.mongo.socket-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.xzxy.lewy.framework.kafka.config.MongoClientOptionsProperties",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}

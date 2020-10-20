@@ -1,4 +1,4 @@
-package cn.xzxy.lewy.cache.config;
+package cn.xzxy.lewy.framework.cache.config;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.parser.ParserConfig;

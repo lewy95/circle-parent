@@ -1,2 +1,2 @@
 # Auto Configuration
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=cn.xzxy.lewy.cache.config.RedissonConfig
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=cn.xzxy.lewy.framework.cache.config.RedissonConfig

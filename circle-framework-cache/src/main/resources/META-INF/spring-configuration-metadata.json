@@ -1,21 +1,21 @@
 {
   "groups": [
     {
-      "name": "spring.redis.redisson",
+      "name": "circle.config.redis.redisson",
       "type": "com.maniujk.configuration.redisson.RedissonConfigProperties",
-      "sourceType": "cn.xzxy.lewy.cache.config.RedissonConfigProperties"
+      "sourceType": "cn.xzxy.lewy.framework.cache.config.RedissonConfigProperties"
     }
   ],
   "properties": [
     {
-      "name": "spring.redis.redisson.config-path",
+      "name": "circle.config.redis.redisson.config-path",
       "type": "java.lang.String",
-      "sourceType": "cn.xzxy.lewy.cache.config.RedissonConfigProperties"
+      "sourceType": "cn.xzxy.lewy.framework.cache.config.RedissonConfigProperties"
     },
     {
-      "name": "spring.redis.redisson.fast-json-accept-package",
+      "name": "circle.config.redis.redisson.fast-json-accept-package",
       "type": "java.lang.String",
-      "sourceType": "cn.xzxy.lewy.cache.config.RedissonConfigProperties"
+      "sourceType": "cn.xzxy.lewy.framework.cache.config.RedissonConfigProperties"
     }
   ],
   "hints": []

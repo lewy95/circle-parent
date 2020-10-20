@@ -15,6 +15,7 @@
         <module>circle-framework-logback</module>
         <module>circle-framework-openfeign</module>
         <module>circle-framework-cache</module>
+        <module>circle-framework-kafka</module>
     </modules>
 
     <properties>
