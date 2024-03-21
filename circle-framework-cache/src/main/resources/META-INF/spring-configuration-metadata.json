@@ -2,7 +2,7 @@
   "groups": [
     {
       "name": "circle.config.redis.redisson",
-      "type": "cn.xzxy.lewy.framework.config.RedissonConfigProperties",
+      "type": "cn.xzxy.lewy.framework.cache.config.RedissonConfigProperties",
       "sourceType": "cn.xzxy.lewy.framework.cache.config.RedissonConfigProperties"
     }
   ],
